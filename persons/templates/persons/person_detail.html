@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{{ person.name }}</h2>
+<p>Age: {{ person.age }}</p>
+<p>Gender: {{ person.gender }}</p>
+<a href="{% url 'person_list' %}" class="btn btn-secondary">Back to List</a>
+{% endblock %}

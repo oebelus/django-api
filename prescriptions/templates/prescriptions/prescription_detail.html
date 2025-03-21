@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Prescription for {{ prescription.person.name }}</h2>
+<p>Date: {{ prescription.date }}</p>
+<h3>Medications:</h3>
+<ul>
+    {% for item in prescription.items.all %}
+    <li>{{ item.quantity }}x {{ item.medication.name }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'person_detail' prescription.person.id %}" class="btn btn-secondary">Back to Person</a>
+{% endblock %}
