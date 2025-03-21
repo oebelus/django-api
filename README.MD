@@ -1,4 +1,4 @@
-# Physician-Patient Prescription Management Platform
+# Prescription Management Platform
 
 A Django-based platform for physicians to manage patients and create prescriptions using a medication database.
 
