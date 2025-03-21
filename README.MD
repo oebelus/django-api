@@ -1,6 +1,6 @@
 # Prescription Management Platform
 
-A Django-based platform for physicians to manage patients and create prescriptions using a medication database.
+A Django-based platform for physicians to manage people and create prescriptions using a medication database.
 
 ## Features
 - User authentication for physicians.
@@ -12,6 +12,6 @@ A Django-based platform for physicians to manage patients and create prescriptio
 
 ## API Endpoints
 - Authentication: `/api/login/`, `/api/register/`.
-- Patients: `/api/patients/`, `/api/patients/<id>/`.
+- people: `/api/people/`, `/api/people/<id>/`.
 - Medications: `/api/medications/`, `/api/medications/?search=<query>`.
 - Prescriptions: `/api/prescriptions/`, `/api/prescriptions/<id>/`.
